@@ -18,4 +18,4 @@ if __name__ == "__main__":
     app = gr.Interface(
         fn=swap, inputs=["image", "image"], outputs=gr.Image()
     )
-    app.launch(server_name="0.0.0.0")
+    app.launch(server_name="0.0.0.0", share=True)
