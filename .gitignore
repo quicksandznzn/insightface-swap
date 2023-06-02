@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 
 flagged
+models/inswapper_128.onnx

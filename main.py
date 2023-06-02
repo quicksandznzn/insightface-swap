@@ -16,6 +16,9 @@ def swap(source_img, target_img):
 
 if __name__ == "__main__":
     app = gr.Interface(
-        fn=swap, inputs=["image", "image"], outputs=gr.Image()
+        fn=swap,
+        inputs=["image", "image"],
+        outputs=gr.Image().style(width=600, height=496),
+        allow_flagging="never",
     )
     app.launch(server_name="0.0.0.0", share=True)
